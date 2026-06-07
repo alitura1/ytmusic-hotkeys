@@ -124,5 +124,11 @@
   },
   "pp_globalFix": {
     "message": "Corrigir"
+  },
+  "opt_language": {
+    "message": "Idioma"
+  },
+  "lang_auto": {
+    "message": "Automático (navegador)"
   }
 }

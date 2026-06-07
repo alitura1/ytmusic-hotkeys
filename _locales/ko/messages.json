@@ -124,5 +124,11 @@
   },
   "pp_globalFix": {
     "message": "수정"
+  },
+  "opt_language": {
+    "message": "언어"
+  },
+  "lang_auto": {
+    "message": "자동 (브라우저)"
   }
 }

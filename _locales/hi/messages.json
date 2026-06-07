@@ -124,5 +124,11 @@
   },
   "pp_globalFix": {
     "message": "ठीक करें"
+  },
+  "opt_language": {
+    "message": "भाषा"
+  },
+  "lang_auto": {
+    "message": "स्वचालित (ब्राउज़र)"
   }
 }

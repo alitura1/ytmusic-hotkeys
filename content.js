@@ -17,9 +17,9 @@
 
   function playPause() {
     const btn =
-      $("button.video-button.ytmusic-av-toggle") ||
+      $("#play-pause-button") ||
       $(".play-pause-button.ytmusic-player-bar") ||
-      $("#play-pause-button");
+      $("ytmusic-player-bar tp-yt-paper-icon-button.play-pause-button");
     if (btn) {
       btn.click();
       return true;
@@ -93,28 +93,47 @@
     return true;
   }
 
-  // Beğen: aria-label TR/AR vb. lokalize olabilir → varsa aria-label, yoksa son buton
-  function like() {
-    const renderer = $("ytmusic-player-bar ytmusic-like-button-renderer");
-    if (!renderer) return false;
-    const buttons = Array.from(renderer.querySelectorAll("button"));
-    if (!buttons.length) return false;
-    const byLabel = buttons.find((b) =>
-      /like|be[ğg]en|j'aime|gefällt|мне нравится|いいね|좋아요|喜欢|إعجاب/i.test(
-        b.getAttribute("aria-label") || ""
-      )
-    );
-    (byLabel || buttons[buttons.length - 1]).click();
+  // Beğen butonu. Dil-bağımsız: "like" class token'ı (dislike'tan ayrı bir token olduğu
+  // için .like asla dislike'ı yakalamaz). Eski (paper-icon-button) + yeni (yt-button-shape)
+  // yapıları kapsar; son çare aria-label ("Beğenme"/"dislike" hariç).
+  function clickIn(el) {
+    if (!el) return false;
+    (el.matches("button") ? el : el.querySelector("button") || el).click();
     return true;
+  }
+  function like() {
+    const bar = $("ytmusic-player-bar");
+    if (!bar) return false;
+    const selectors = [
+      "#button-shape-like",
+      "yt-button-shape.like",
+      "tp-yt-paper-icon-button.like",
+      "button.like",
+      ".like"
+    ];
+    for (const s of selectors) {
+      const el = bar.querySelector(s);
+      if (el) return clickIn(el);
+    }
+    const cands = Array.from(bar.querySelectorAll("button, tp-yt-paper-icon-button"));
+    const el = cands.find((b) => {
+      const cls = b.className && b.className.baseVal !== undefined ? b.className.baseVal : b.className || "";
+      const s = ((b.getAttribute("aria-label") || "") + " " + (b.getAttribute("title") || "") + " " + (b.id || "") + " " + cls).toLowerCase();
+      return /like|be[ğg]en|j'aime|gefäll|нрав|いい|좋아|喜欢|إعجاب|पसंद/.test(s) &&
+        !/dislike|be[ğg]enme|n'aime pas|nicht|不喜欢|싫어|低評価|عدم|नापसंद/.test(s);
+    });
+    return clickIn(el);
   }
 
   function albumArt() {
-    const img =
-      $("#song-image img") ||
-      $("ytmusic-player-bar img.image") ||
-      $("img.ytmusic-player-bar") ||
-      $("ytmusic-player-bar img");
-    return img ? img.src : "";
+    const bar = $("ytmusic-player-bar");
+    if (bar) {
+      const imgs = Array.from(bar.querySelectorAll("img"));
+      const withSrc = imgs.find((i) => i.src && /^https?:/.test(i.src));
+      if (withSrc) return withSrc.src;
+    }
+    const el = $("#song-image img") || $("img.image.ytmusic-player-bar") || $(".thumbnail img");
+    return el && el.src ? el.src : "";
   }
 
   function runAction(action) {

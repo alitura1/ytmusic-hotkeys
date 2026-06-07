@@ -124,5 +124,11 @@
   },
   "pp_globalFix": {
     "message": "إصلاح"
+  },
+  "opt_language": {
+    "message": "اللغة"
+  },
+  "lang_auto": {
+    "message": "تلقائي (المتصفح)"
   }
 }

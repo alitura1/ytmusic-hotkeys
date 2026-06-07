@@ -213,6 +213,22 @@ input[type="number"]:focus {
   border-color: var(--accent);
 }
 
+.lang-select {
+  width: 100%;
+  background: #111;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  padding: 9px 12px;
+  font-size: 13.5px;
+  cursor: pointer;
+}
+
+.lang-select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
 footer {
   display: flex;
   align-items: center;

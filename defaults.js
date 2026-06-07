@@ -71,3 +71,51 @@ function ytmPrettyCombo(combo) {
     return p;
   }).join(" + ");
 }
+
+// --- i18n (manuel dil seçimi) ---
+// Desteklenen diller, kendi adlarıyla. "auto" = tarayıcı dili (chrome.i18n).
+var YTM_LOCALE_NAMES = {
+  en: "English",
+  tr: "Türkçe",
+  ar: "العربية",
+  es: "Español",
+  fr: "Français",
+  de: "Deutsch",
+  ru: "Русский",
+  pt_BR: "Português (BR)",
+  it: "Italiano",
+  ja: "日本語",
+  ko: "한국어",
+  zh_CN: "中文 (简体)",
+  hi: "हिन्दी"
+};
+var YTM_RTL_LOCALES = ["ar"];
+
+function ytmFetchMessages(loc) {
+  return fetch(chrome.runtime.getURL("_locales/" + loc + "/messages.json"))
+    .then(function (r) { return r.json(); })
+    .catch(function () { return null; });
+}
+
+// Seçilen dile göre {t, dir, locale} döndürür (Promise).
+// uiLocale="auto" ise chrome.i18n (tarayıcı dili) kullanılır.
+async function ytmBuildI18n() {
+  let data = {};
+  try { data = await chrome.storage.sync.get(["uiLocale"]); } catch (e) { /* yoksa auto */ }
+  const choice = (data && data.uiLocale) || "auto";
+  if (choice === "auto" || !YTM_LOCALE_NAMES[choice]) {
+    return {
+      t: (k) => chrome.i18n.getMessage(k) || k,
+      dir: chrome.i18n.getMessage("@@bidi_dir") || "ltr",
+      locale: "auto"
+    };
+  }
+  const msgs = (await ytmFetchMessages(choice)) || {};
+  const en = choice === "en" ? msgs : ((await ytmFetchMessages("en")) || {});
+  const t = (k) =>
+    (msgs[k] && msgs[k].message) ||
+    (en[k] && en[k].message) ||
+    chrome.i18n.getMessage(k) ||
+    k;
+  return { t, dir: YTM_RTL_LOCALES.indexOf(choice) >= 0 ? "rtl" : "ltr", locale: choice };
+}

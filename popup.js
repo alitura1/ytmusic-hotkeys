@@ -2,13 +2,16 @@
 (() => {
   "use strict";
 
-  const t = (k) => chrome.i18n.getMessage(k) || k;
+  let I18N = { t: (k) => k, dir: "ltr", locale: "auto" };
+  const t = (k) => I18N.t(k);
   const ICON_PLAY = '<svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>';
   const ICON_PAUSE = '<svg viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
 
-  function applyI18n() {
-    document.documentElement.lang = chrome.i18n.getMessage("@@ui_locale") || "en";
-    document.dir = chrome.i18n.getMessage("@@bidi_dir") || "ltr";
+  async function applyI18n() {
+    I18N = await ytmBuildI18n();
+    document.dir = I18N.dir;
+    document.documentElement.lang =
+      I18N.locale === "auto" ? chrome.i18n.getMessage("@@ui_locale") || "en" : I18N.locale;
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const msg = t(el.getAttribute("data-i18n"));
       if (msg) el.textContent = msg;
@@ -126,7 +129,7 @@
   document.getElementById("open-shortcuts").addEventListener("click", openShortcuts);
 
   async function init() {
-    applyI18n();
+    await applyI18n();
     wireTransport();
     loadGlobalStatus();
     const tab = await getYtmTab();

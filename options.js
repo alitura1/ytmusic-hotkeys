@@ -1,12 +1,27 @@
-// Ayarlar sayfası — kombinasyon yakalama + parametreler → chrome.storage.sync
+// Ayarlar sayfası — dil seçimi + kombinasyon yakalama + parametreler → chrome.storage.sync
 (() => {
   "use strict";
 
-  // --- i18n ---
-  const t = (k) => chrome.i18n.getMessage(k) || k;
-  function applyI18n() {
-    document.documentElement.lang = chrome.i18n.getMessage("@@ui_locale") || "en";
-    document.dir = chrome.i18n.getMessage("@@bidi_dir") || "ltr";
+  let I18N = { t: (k) => k, dir: "ltr", locale: "auto" };
+  const t = (k) => I18N.t(k);
+
+  const rowsEl = document.getElementById("rows");
+  const volumeStepEl = document.getElementById("volumeStep");
+  const seekSecondsEl = document.getElementById("seekSeconds");
+  const statusEl = document.getElementById("status");
+  const langEl = document.getElementById("uiLocale");
+
+  let state = {
+    keymap: { ...YTM_DEFAULTS.keymap },
+    volumeStep: YTM_DEFAULTS.volumeStep,
+    seekSeconds: YTM_DEFAULTS.seekSeconds
+  };
+
+  async function applyI18n() {
+    I18N = await ytmBuildI18n();
+    document.dir = I18N.dir;
+    document.documentElement.lang =
+      I18N.locale === "auto" ? chrome.i18n.getMessage("@@ui_locale") || "en" : I18N.locale;
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const msg = t(el.getAttribute("data-i18n"));
       if (msg) el.textContent = msg;
@@ -14,16 +29,23 @@
     document.title = t("extName");
   }
 
-  const rowsEl = document.getElementById("rows");
-  const volumeStepEl = document.getElementById("volumeStep");
-  const seekSecondsEl = document.getElementById("seekSeconds");
-  const statusEl = document.getElementById("status");
-
-  let state = {
-    keymap: { ...YTM_DEFAULTS.keymap },
-    volumeStep: YTM_DEFAULTS.volumeStep,
-    seekSeconds: YTM_DEFAULTS.seekSeconds
-  };
+  function populateLangSelect() {
+    langEl.innerHTML = "";
+    const auto = document.createElement("option");
+    auto.value = "auto";
+    auto.textContent = t("lang_auto");
+    langEl.appendChild(auto);
+    Object.keys(YTM_LOCALE_NAMES).forEach((code) => {
+      const o = document.createElement("option");
+      o.value = code;
+      o.textContent = YTM_LOCALE_NAMES[code];
+      langEl.appendChild(o);
+    });
+    langEl.value = I18N.locale;
+    langEl.addEventListener("change", () => {
+      chrome.storage.sync.set({ uiLocale: langEl.value }, () => location.reload());
+    });
+  }
 
   function showStatus(text) {
     statusEl.textContent = text;
@@ -34,11 +56,7 @@
 
   function save(msgKey) {
     chrome.storage.sync.set(
-      {
-        keymap: state.keymap,
-        volumeStep: state.volumeStep,
-        seekSeconds: state.seekSeconds
-      },
+      { keymap: state.keymap, volumeStep: state.volumeStep, seekSeconds: state.seekSeconds },
       () => showStatus(t(msgKey || "opt_saved"))
     );
   }
@@ -99,7 +117,7 @@
         stopCapture();
         return;
       }
-      if (ytmIsModifierOnly(e)) return; // tam kombinasyonu bekle
+      if (ytmIsModifierOnly(e)) return;
       state.keymap[action.id] = ytmComboFromEvent(e);
       stopCapture();
       save();
@@ -155,7 +173,6 @@
   });
 
   document.getElementById("open-shortcuts").addEventListener("click", () => {
-    // Firefox: openShortcutSettings; Chrome/Edge/Brave: kısayol sayfası
     if (chrome.commands && chrome.commands.openShortcutSettings) {
       chrome.commands.openShortcutSettings();
     } else {
@@ -173,6 +190,11 @@
     save("opt_resetDone");
   });
 
-  applyI18n();
-  load();
+  async function init() {
+    await applyI18n();
+    populateLangSelect();
+    load();
+  }
+
+  init();
 })();

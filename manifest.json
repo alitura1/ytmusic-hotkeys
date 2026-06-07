@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "__MSG_extName__",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "default_locale": "en",
   "description": "__MSG_extDesc__",
   "permissions": ["storage", "scripting"],
@@ -37,15 +37,15 @@
       "global": true,
       "description": "__MSG_cmd_playPause__"
     },
-    "next": {
+    "previous": {
       "suggested_key": { "default": "Ctrl+Shift+2" },
       "global": true,
-      "description": "__MSG_cmd_next__"
+      "description": "__MSG_cmd_previous__"
     },
-    "previous": {
+    "next": {
       "suggested_key": { "default": "Ctrl+Shift+3" },
       "global": true,
-      "description": "__MSG_cmd_previous__"
+      "description": "__MSG_cmd_next__"
     },
     "mute": {
       "suggested_key": { "default": "Ctrl+Shift+4" },

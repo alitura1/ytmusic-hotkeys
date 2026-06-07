@@ -124,5 +124,11 @@
   },
   "pp_globalFix": {
     "message": "修复"
+  },
+  "opt_language": {
+    "message": "语言"
+  },
+  "lang_auto": {
+    "message": "自动（浏览器）"
   }
 }

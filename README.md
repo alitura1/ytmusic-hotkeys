@@ -17,8 +17,9 @@ next/previous, volume, mute, seek and like. Works on **Chrome, Edge, Brave** (an
   so it works the same on QWERTY/Q/F keyboards.
 - **Popup** with album art, track info, transport buttons and a **global-shortcut status**
   panel (shows whether each global key is assigned, with a one-click fix link).
-- **13 languages** (auto-follows the browser language): English, Türkçe, العربية (RTL),
-  Español, Français, Deutsch, Русский, Português (BR), Italiano, 日本語, 한국어, 简体中文, हिन्दी.
+- **13 languages** — auto-follows the browser language, or pick one manually in the options page:
+  English, Türkçe, العربية (RTL), Español, Français, Deutsch, Русский, Português (BR), Italiano,
+  日本語, 한국어, 简体中文, हिन्दी.
 
 ## Install (Chrome / Edge / Brave)
 
@@ -45,8 +46,8 @@ next/previous, volume, mute, seek and like. Works on **Chrome, Edge, Brave** (an
 | Default key    | Action            |
 | -------------- | ----------------- |
 | `Ctrl+Shift+1` | Play / Pause      |
-| `Ctrl+Shift+2` | Next track        |
-| `Ctrl+Shift+3` | Previous track    |
+| `Ctrl+Shift+2` | Previous track    |
+| `Ctrl+Shift+3` | Next track        |
 | `Ctrl+Shift+4` | Mute / Unmute     |
 
 Edit these in `chrome://extensions/shortcuts` (the popup and options page both have a button
@@ -121,7 +122,7 @@ sarma, beğen. **Chrome, Edge, Brave** (ve bir **Firefox** sürümü). **13 dil*
 
 ### Kısayollar
 **Global** (varsayılan, değiştirilebilir → `chrome://extensions/shortcuts`):
-`Ctrl+Shift+1` Oynat/Duraklat · `Ctrl+Shift+2` Sonraki · `Ctrl+Shift+3` Önceki · `Ctrl+Shift+4` Sustur
+`Ctrl+Shift+1` Oynat/Duraklat · `Ctrl+Shift+2` Önceki · `Ctrl+Shift+3` Sonraki · `Ctrl+Shift+4` Sustur
 
 **Sayfa-içi** (varsayılan, ayarlardan değiştirilebilir):
 `Alt+Shift+P` Oynat/Duraklat · `Alt+Shift+→/←` Sonraki/Önceki · `Alt+Shift+↑/↓` Ses +/− ·
