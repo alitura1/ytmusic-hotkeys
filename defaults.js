@@ -6,15 +6,15 @@
 // "" = atanmamış.
 var YTM_DEFAULTS = {
   keymap: {
-    "play-pause": "Alt+Shift+KeyP",
-    "next": "Alt+Shift+ArrowRight",
-    "previous": "Alt+Shift+ArrowLeft",
-    "volume-up": "Alt+Shift+ArrowUp",
-    "volume-down": "Alt+Shift+ArrowDown",
-    "mute": "Alt+Shift+KeyM",
-    "seek-forward": "Alt+Shift+KeyF",
-    "seek-back": "Alt+Shift+KeyB",
-    "like": "Alt+Shift+KeyL"
+    "play-pause": "KeyK",
+    "previous": "KeyP",
+    "next": "KeyN",
+    "volume-up": "ArrowUp",
+    "volume-down": "ArrowDown",
+    "seek-forward": "ArrowRight",
+    "seek-back": "ArrowLeft",
+    "mute": "KeyM",
+    "like": "KeyL"
   },
   volumeStep: 5, // yüzde
   seekSeconds: 5 // saniye

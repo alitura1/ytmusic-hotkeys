@@ -56,17 +56,19 @@ that opens it). If a key shows as **unassigned** in the popup's status panel, ju
 
 ### In-page (only while the YouTube Music tab is focused — rebindable in options)
 
-| Default combo    | Action        |
-| ---------------- | ------------- |
-| `Alt+Shift+P`    | Play / Pause  |
-| `Alt+Shift+→`    | Next          |
-| `Alt+Shift+←`    | Previous      |
-| `Alt+Shift+↑`    | Volume up     |
-| `Alt+Shift+↓`    | Volume down   |
-| `Alt+Shift+M`    | Mute          |
-| `Alt+Shift+F`    | Seek forward  |
-| `Alt+Shift+B`    | Seek backward |
-| `Alt+Shift+L`    | Like          |
+| Default key | Action        |
+| ----------- | ------------- |
+| `K`         | Play / Pause  |
+| `P`         | Previous      |
+| `N`         | Next          |
+| `↑`         | Volume up     |
+| `↓`         | Volume down   |
+| `→`         | Seek forward  |
+| `←`         | Seek backward |
+| `M`         | Mute          |
+| `L`         | Like          |
+
+> Prefer key combos? Each binding accepts modifiers too — just hold e.g. `Alt+Shift` while capturing in options.
 
 Change any of these (and the volume step / seek seconds) from the extension's **options page**
 (popup → "Key settings").
@@ -125,8 +127,8 @@ sarma, beğen. **Chrome, Edge, Brave** (ve bir **Firefox** sürümü). **13 dil*
 `Ctrl+Shift+1` Oynat/Duraklat · `Ctrl+Shift+2` Önceki · `Ctrl+Shift+3` Sonraki · `Ctrl+Shift+4` Sustur
 
 **Sayfa-içi** (varsayılan, ayarlardan değiştirilebilir):
-`Alt+Shift+P` Oynat/Duraklat · `Alt+Shift+→/←` Sonraki/Önceki · `Alt+Shift+↑/↓` Ses +/− ·
-`Alt+Shift+M` Sustur · `Alt+Shift+F/B` İleri/Geri sar · `Alt+Shift+L` Beğen
+`K` Oynat/Duraklat · `P/N` Önceki/Sonraki · `↑/↓` Ses +/− · `→/←` İleri/Geri sar · `M` Sustur · `L` Beğen
+(istersen options'ta yakalarken `Alt+Shift` gibi bir modifier basılı tutarak kombinasyon da atayabilirsin)
 
 ### Fn tuşu hakkında
 Laptop **`Fn` tuşu algılanamaz** — klavye firmware'inde işlenir, tarayıcıya tuş olayı göndermez.

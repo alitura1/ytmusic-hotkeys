@@ -16,17 +16,23 @@
   const video = () => $("video");
 
   function playPause() {
+    // <video> doğrudan: mute (video.muted) çalıştığına göre bu da garanti çalışır
+    const v = video();
+    if (v) {
+      try {
+        if (v.paused) v.play();
+        else v.pause();
+        return true;
+      } catch (_) {
+        /* fallback'e düş */
+      }
+    }
     const btn =
       $("#play-pause-button") ||
       $(".play-pause-button.ytmusic-player-bar") ||
       $("ytmusic-player-bar tp-yt-paper-icon-button.play-pause-button");
     if (btn) {
       btn.click();
-      return true;
-    }
-    const v = video();
-    if (v) {
-      v.paused ? v.play() : v.pause();
       return true;
     }
     return false;
@@ -98,42 +104,55 @@
   // yapıları kapsar; son çare aria-label ("Beğenme"/"dislike" hariç).
   function clickIn(el) {
     if (!el) return false;
-    (el.matches("button") ? el : el.querySelector("button") || el).click();
+    const target =
+      el.matches && el.matches("button") ? el : (el.querySelector && el.querySelector("button")) || el;
+    target.click();
     return true;
   }
+  // Beğen: ETİKET-temelli, ÖNCE dislike'ı ele (TR "Beğen" vs "Beğenme" çakışmasını çözer).
   function like() {
     const bar = $("ytmusic-player-bar");
     if (!bar) return false;
-    const selectors = [
-      "#button-shape-like",
-      "yt-button-shape.like",
-      "tp-yt-paper-icon-button.like",
-      "button.like",
-      ".like"
-    ];
-    for (const s of selectors) {
-      const el = bar.querySelector(s);
-      if (el) return clickIn(el);
+    const dislikeRe = /dislike|be[ğg]enme|no me gusta|n'aime pas|mag ich nicht|не нрав|低評価|嫌い|싫어|不喜[欢歡]|عدم الإعجاب|नापसंद|non mi piace|não curtir/i;
+    const likeRe = /\blike\b|be[ğg]en|me gusta|j'aime|gefäll|нрав|いいね|高く評価|좋아|喜[欢歡]|إعجاب|पसंद|mi piace|curtir/i;
+    const btns = Array.from(bar.querySelectorAll("button, tp-yt-paper-icon-button, yt-button-shape"));
+    let likeBtn = null;
+    for (const b of btns) {
+      const lab = (b.getAttribute("aria-label") || b.getAttribute("title") || "").trim();
+      if (!lab) continue;
+      if (dislikeRe.test(lab)) continue; // dislike — atla
+      if (likeRe.test(lab)) {
+        likeBtn = b;
+        break;
+      }
     }
-    const cands = Array.from(bar.querySelectorAll("button, tp-yt-paper-icon-button"));
-    const el = cands.find((b) => {
-      const cls = b.className && b.className.baseVal !== undefined ? b.className.baseVal : b.className || "";
-      const s = ((b.getAttribute("aria-label") || "") + " " + (b.getAttribute("title") || "") + " " + (b.id || "") + " " + cls).toLowerCase();
-      return /like|be[ğg]en|j'aime|gefäll|нрав|いい|좋아|喜欢|إعجاب|पसंद/.test(s) &&
-        !/dislike|be[ğg]enme|n'aime pas|nicht|不喜欢|싫어|低評価|عدم|नापसंद/.test(s);
-    });
-    return clickIn(el);
+    // Yedek: 'like' class token'ı (dislike asla eşleşmez — farklı token)
+    if (!likeBtn) {
+      likeBtn = bar.querySelector(
+        "#button-shape-like, yt-button-shape.like, tp-yt-paper-icon-button.like, button.like, .like"
+      );
+    }
+    return clickIn(likeBtn);
   }
 
   function albumArt() {
     const bar = $("ytmusic-player-bar");
     if (bar) {
-      const imgs = Array.from(bar.querySelectorAll("img"));
-      const withSrc = imgs.find((i) => i.src && /^https?:/.test(i.src));
-      if (withSrc) return withSrc.src;
+      const i = Array.from(bar.querySelectorAll("img")).find((x) => x.src && /^https?:/.test(x.src));
+      if (i) return i.src;
     }
-    const el = $("#song-image img") || $("img.image.ytmusic-player-bar") || $(".thumbnail img");
-    return el && el.src ? el.src : "";
+    const el =
+      $("img#song-image") ||
+      $("#song-image img") ||
+      $("img.image.ytmusic-player-bar") ||
+      $("#thumbnail img") ||
+      $("ytmusic-player-bar img");
+    if (el && el.src && /^https?:/.test(el.src)) return el.src;
+    // son çare: sayfadaki ilk YTM kapak görseli
+    const any = Array.from(document.querySelectorAll("img")).find(
+      (x) => x.src && /(googleusercontent|ytimg)/.test(x.src)
+    );
+    return any ? any.src : "";
   }
 
   function runAction(action) {
