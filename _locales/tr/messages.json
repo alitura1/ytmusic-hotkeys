@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "YouTube Music Kısayolları"
+  },
+  "extDesc": {
+    "message": "YouTube Music'i klavye kısayollarıyla kontrol et: oynat/duraklat, sonraki/önceki, ses, sustur, sarma, beğen."
+  },
+  "cmd_playPause": {
+    "message": "Oynat / Duraklat"
+  },
+  "cmd_next": {
+    "message": "Sonraki şarkı"
+  },
+  "cmd_previous": {
+    "message": "Önceki şarkı"
+  },
+  "cmd_mute": {
+    "message": "Sustur / Aç"
+  },
+  "act_playPause": {
+    "message": "Oynat / Duraklat"
+  },
+  "act_next": {
+    "message": "Sonraki şarkı"
+  },
+  "act_previous": {
+    "message": "Önceki şarkı"
+  },
+  "act_mute": {
+    "message": "Sustur / Aç"
+  },
+  "act_volumeUp": {
+    "message": "Ses aç"
+  },
+  "act_volumeDown": {
+    "message": "Ses kıs"
+  },
+  "act_seekForward": {
+    "message": "İleri sar"
+  },
+  "act_seekBack": {
+    "message": "Geri sar"
+  },
+  "act_like": {
+    "message": "Beğen"
+  },
+  "opt_subtitle": {
+    "message": "Tuşları aşağıdan ayarla. Sayfa-içi kısayollar yalnız YouTube Music sekmesi öndeyken çalışır."
+  },
+  "opt_globalTitle": {
+    "message": "Global kısayollar"
+  },
+  "tag_everywhere": {
+    "message": "her yerde çalışır"
+  },
+  "opt_globalDesc": {
+    "message": "Oynat/Duraklat, Sonraki, Önceki ve Sustur tarayıcı arka plandayken bile çalışır. Bu dört tuş tarayıcı tarafından yönetilir; aşağıdaki butonla değiştir."
+  },
+  "opt_editGlobal": {
+    "message": "Global kısayolları düzenle"
+  },
+  "opt_globalHint": {
+    "message": "Açılan sayfada bu eklentiyi bul → kalem simgesinden tuşu değiştir."
+  },
+  "opt_inpageTitle": {
+    "message": "Sayfa-içi kısayollar"
+  },
+  "tag_tabfocus": {
+    "message": "sekme öndeyken"
+  },
+  "opt_inpageDesc": {
+    "message": "Tuşu değiştirmek için kutuya tıkla, sonra kombinasyona bas. ✕ ile temizle. Bir aksiyona ayrı bir sayfa-içi kombinasyon da atayabilirsin."
+  },
+  "opt_paramsTitle": {
+    "message": "Parametreler"
+  },
+  "opt_volumeStep": {
+    "message": "Ses adımı"
+  },
+  "opt_seekSeconds": {
+    "message": "Sarma süresi"
+  },
+  "opt_unitSeconds": {
+    "message": "saniye"
+  },
+  "opt_reset": {
+    "message": "Varsayılanlara dön"
+  },
+  "opt_saved": {
+    "message": "Kaydedildi ✓"
+  },
+  "opt_resetDone": {
+    "message": "Varsayılanlara dönüldü"
+  },
+  "opt_globalRowNote": {
+    "message": "global tuş ayrı (yukarıdaki buton)"
+  },
+  "key_unassigned": {
+    "message": "atanmamış"
+  },
+  "key_press": {
+    "message": "tuşa bas…"
+  },
+  "pp_settings": {
+    "message": "Tuş ayarları"
+  },
+  "pp_editGlobal": {
+    "message": "Global kısayolları düzenle"
+  },
+  "pp_notOpen": {
+    "message": "YouTube Music açık değil."
+  },
+  "pp_noTrack": {
+    "message": "Şu an çalan şarkı yok."
+  },
+  "pp_loading": {
+    "message": "Yükleniyor…"
+  },
+  "pp_globalTitle": {
+    "message": "Global kısayol durumu"
+  },
+  "pp_globalUnassigned": {
+    "message": "atanmamış"
+  },
+  "pp_globalFix": {
+    "message": "Düzelt"
+  }
+}

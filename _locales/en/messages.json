@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "YouTube Music Hotkeys"
+  },
+  "extDesc": {
+    "message": "Control YouTube Music with keyboard shortcuts: play/pause, next/previous, volume, mute, seek, like."
+  },
+  "cmd_playPause": {
+    "message": "Play / Pause"
+  },
+  "cmd_next": {
+    "message": "Next track"
+  },
+  "cmd_previous": {
+    "message": "Previous track"
+  },
+  "cmd_mute": {
+    "message": "Mute / Unmute"
+  },
+  "act_playPause": {
+    "message": "Play / Pause"
+  },
+  "act_next": {
+    "message": "Next track"
+  },
+  "act_previous": {
+    "message": "Previous track"
+  },
+  "act_mute": {
+    "message": "Mute / Unmute"
+  },
+  "act_volumeUp": {
+    "message": "Volume up"
+  },
+  "act_volumeDown": {
+    "message": "Volume down"
+  },
+  "act_seekForward": {
+    "message": "Seek forward"
+  },
+  "act_seekBack": {
+    "message": "Seek backward"
+  },
+  "act_like": {
+    "message": "Like"
+  },
+  "opt_subtitle": {
+    "message": "Set your keys below. In-page shortcuts work only while the YouTube Music tab is focused."
+  },
+  "opt_globalTitle": {
+    "message": "Global shortcuts"
+  },
+  "tag_everywhere": {
+    "message": "works everywhere"
+  },
+  "opt_globalDesc": {
+    "message": "Play/Pause, Next, Previous and Mute work even when the browser is in the background. These four keys are managed by the browser; edit them with the button below."
+  },
+  "opt_editGlobal": {
+    "message": "Edit global shortcuts"
+  },
+  "opt_globalHint": {
+    "message": "On the page that opens, find this extension and change the key from the pencil icon."
+  },
+  "opt_inpageTitle": {
+    "message": "In-page shortcuts"
+  },
+  "tag_tabfocus": {
+    "message": "while tab is focused"
+  },
+  "opt_inpageDesc": {
+    "message": "Click a box and press your key combination to change it. Clear with the ✕. You can also assign a separate in-page combo to an action."
+  },
+  "opt_paramsTitle": {
+    "message": "Parameters"
+  },
+  "opt_volumeStep": {
+    "message": "Volume step"
+  },
+  "opt_seekSeconds": {
+    "message": "Seek amount"
+  },
+  "opt_unitSeconds": {
+    "message": "seconds"
+  },
+  "opt_reset": {
+    "message": "Restore defaults"
+  },
+  "opt_saved": {
+    "message": "Saved ✓"
+  },
+  "opt_resetDone": {
+    "message": "Defaults restored"
+  },
+  "opt_globalRowNote": {
+    "message": "global key is separate (button above)"
+  },
+  "key_unassigned": {
+    "message": "unassigned"
+  },
+  "key_press": {
+    "message": "press keys…"
+  },
+  "pp_settings": {
+    "message": "Key settings"
+  },
+  "pp_editGlobal": {
+    "message": "Edit global shortcuts"
+  },
+  "pp_notOpen": {
+    "message": "YouTube Music is not open."
+  },
+  "pp_noTrack": {
+    "message": "Nothing is playing right now."
+  },
+  "pp_loading": {
+    "message": "Loading…"
+  },
+  "pp_globalTitle": {
+    "message": "Global shortcut status"
+  },
+  "pp_globalUnassigned": {
+    "message": "unassigned"
+  },
+  "pp_globalFix": {
+    "message": "Fix"
+  }
+}

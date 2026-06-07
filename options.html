@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Music · Hotkeys</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo">
+          <svg viewBox="0 0 100 100" width="44" height="44" aria-hidden="true">
+            <circle cx="50" cy="50" r="50" fill="#ff0033" />
+            <path d="M40 30 L40 70 L72 50 Z" fill="#fff" />
+          </svg>
+        </div>
+        <div>
+          <h1 data-i18n="extName">YouTube Music Hotkeys</h1>
+          <p class="sub" data-i18n="opt_subtitle"></p>
+        </div>
+      </header>
+
+      <section class="card">
+        <h2><span data-i18n="opt_globalTitle"></span> <span class="tag" data-i18n="tag_everywhere"></span></h2>
+        <p class="muted" data-i18n="opt_globalDesc"></p>
+        <button id="open-shortcuts" class="btn primary" data-i18n="opt_editGlobal"></button>
+        <p class="hint" data-i18n="opt_globalHint"></p>
+      </section>
+
+      <section class="card">
+        <h2><span data-i18n="opt_inpageTitle"></span> <span class="tag alt" data-i18n="tag_tabfocus"></span></h2>
+        <p class="muted" data-i18n="opt_inpageDesc"></p>
+        <div id="rows" class="rows"></div>
+      </section>
+
+      <section class="card">
+        <h2 data-i18n="opt_paramsTitle"></h2>
+        <div class="param">
+          <label for="volumeStep" data-i18n="opt_volumeStep"></label>
+          <div class="inline">
+            <input type="number" id="volumeStep" min="1" max="50" step="1" /> <span>%</span>
+          </div>
+        </div>
+        <div class="param">
+          <label for="seekSeconds" data-i18n="opt_seekSeconds"></label>
+          <div class="inline">
+            <input type="number" id="seekSeconds" min="1" max="60" step="1" />
+            <span data-i18n="opt_unitSeconds"></span>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <button id="reset" class="btn ghost" data-i18n="opt_reset"></button>
+        <span id="status" class="status"></span>
+      </footer>
+    </div>
+
+    <script src="defaults.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

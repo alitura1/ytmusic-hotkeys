@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "YouTube Music हॉटकीज़"
+  },
+  "extDesc": {
+    "message": "कीबोर्ड शॉर्टकट से YouTube Music नियंत्रित करें: चलाएं/रोकें, अगला/पिछला, वॉल्यूम, म्यूट, सीक, लाइक।"
+  },
+  "cmd_playPause": {
+    "message": "चलाएं / रोकें"
+  },
+  "cmd_next": {
+    "message": "अगला ट्रैक"
+  },
+  "cmd_previous": {
+    "message": "पिछला ट्रैक"
+  },
+  "cmd_mute": {
+    "message": "म्यूट / अनम्यूट"
+  },
+  "act_playPause": {
+    "message": "चलाएं / रोकें"
+  },
+  "act_next": {
+    "message": "अगला ट्रैक"
+  },
+  "act_previous": {
+    "message": "पिछला ट्रैक"
+  },
+  "act_mute": {
+    "message": "म्यूट / अनम्यूट"
+  },
+  "act_volumeUp": {
+    "message": "वॉल्यूम बढ़ाएं"
+  },
+  "act_volumeDown": {
+    "message": "वॉल्यूम घटाएं"
+  },
+  "act_seekForward": {
+    "message": "आगे सीक करें"
+  },
+  "act_seekBack": {
+    "message": "पीछे सीक करें"
+  },
+  "act_like": {
+    "message": "लाइक करें"
+  },
+  "opt_subtitle": {
+    "message": "नीचे अपनी कुंजियां सेट करें। इन-पेज शॉर्टकट केवल तभी काम करते हैं जब YouTube Music टैब फोकस में हो।"
+  },
+  "opt_globalTitle": {
+    "message": "ग्लोबल शॉर्टकट"
+  },
+  "tag_everywhere": {
+    "message": "हर जगह काम करता है"
+  },
+  "opt_globalDesc": {
+    "message": "चलाएं/रोकें, अगला, पिछला और म्यूट तब भी काम करते हैं जब ब्राउज़र बैकग्राउंड में हो। ये चार कुंजियां ब्राउज़र द्वारा प्रबंधित होती हैं; इन्हें नीचे दिए गए बटन से संपादित करें।"
+  },
+  "opt_editGlobal": {
+    "message": "ग्लोबल शॉर्टकट संपादित करें"
+  },
+  "opt_globalHint": {
+    "message": "खुलने वाले पेज पर इस एक्सटेंशन को ढूंढें और पेंसिल आइकन से कुंजी बदलें।"
+  },
+  "opt_inpageTitle": {
+    "message": "इन-पेज शॉर्टकट"
+  },
+  "tag_tabfocus": {
+    "message": "जब टैब फोकस में हो"
+  },
+  "opt_inpageDesc": {
+    "message": "किसी बॉक्स पर क्लिक करें और बदलने के लिए अपना कुंजी संयोजन दबाएं। ✕ से साफ़ करें। आप किसी क्रिया को एक अलग इन-पेज संयोजन भी असाइन कर सकते हैं।"
+  },
+  "opt_paramsTitle": {
+    "message": "पैरामीटर"
+  },
+  "opt_volumeStep": {
+    "message": "वॉल्यूम स्टेप"
+  },
+  "opt_seekSeconds": {
+    "message": "सीक की मात्रा"
+  },
+  "opt_unitSeconds": {
+    "message": "सेकंड"
+  },
+  "opt_reset": {
+    "message": "डिफ़ॉल्ट पुनर्स्थापित करें"
+  },
+  "opt_saved": {
+    "message": "सहेजा गया ✓"
+  },
+  "opt_resetDone": {
+    "message": "डिफ़ॉल्ट पुनर्स्थापित किए गए"
+  },
+  "opt_globalRowNote": {
+    "message": "ग्लोबल कुंजी अलग है (ऊपर दिया गया बटन)"
+  },
+  "key_unassigned": {
+    "message": "असाइन नहीं किया गया"
+  },
+  "key_press": {
+    "message": "कुंजियां दबाएं…"
+  },
+  "pp_settings": {
+    "message": "कुंजी सेटिंग्स"
+  },
+  "pp_editGlobal": {
+    "message": "ग्लोबल शॉर्टकट संपादित करें"
+  },
+  "pp_notOpen": {
+    "message": "YouTube Music खुला नहीं है।"
+  },
+  "pp_noTrack": {
+    "message": "अभी कुछ भी नहीं चल रहा है।"
+  },
+  "pp_loading": {
+    "message": "लोड हो रहा है…"
+  },
+  "pp_globalTitle": {
+    "message": "ग्लोबल शॉर्टकट स्थिति"
+  },
+  "pp_globalUnassigned": {
+    "message": "असाइन नहीं किया गया"
+  },
+  "pp_globalFix": {
+    "message": "ठीक करें"
+  }
+}

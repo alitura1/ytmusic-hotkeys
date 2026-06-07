@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "Atalhos do YouTube Music"
+  },
+  "extDesc": {
+    "message": "Controle o YouTube Music com atalhos de teclado: reproduzir/pausar, próxima/anterior, volume, silenciar, avançar/voltar, curtir."
+  },
+  "cmd_playPause": {
+    "message": "Reproduzir / Pausar"
+  },
+  "cmd_next": {
+    "message": "Próxima faixa"
+  },
+  "cmd_previous": {
+    "message": "Faixa anterior"
+  },
+  "cmd_mute": {
+    "message": "Silenciar / Reativar som"
+  },
+  "act_playPause": {
+    "message": "Reproduzir / Pausar"
+  },
+  "act_next": {
+    "message": "Próxima faixa"
+  },
+  "act_previous": {
+    "message": "Faixa anterior"
+  },
+  "act_mute": {
+    "message": "Silenciar / Reativar som"
+  },
+  "act_volumeUp": {
+    "message": "Aumentar volume"
+  },
+  "act_volumeDown": {
+    "message": "Diminuir volume"
+  },
+  "act_seekForward": {
+    "message": "Avançar"
+  },
+  "act_seekBack": {
+    "message": "Voltar"
+  },
+  "act_like": {
+    "message": "Curtir"
+  },
+  "opt_subtitle": {
+    "message": "Defina suas teclas abaixo. Os atalhos na página funcionam apenas com a aba do YouTube Music em foco."
+  },
+  "opt_globalTitle": {
+    "message": "Atalhos globais"
+  },
+  "tag_everywhere": {
+    "message": "funciona em qualquer lugar"
+  },
+  "opt_globalDesc": {
+    "message": "Reproduzir/Pausar, Próxima, Anterior e Silenciar funcionam mesmo com o navegador em segundo plano. Essas quatro teclas são gerenciadas pelo navegador; edite-as com o botão abaixo."
+  },
+  "opt_editGlobal": {
+    "message": "Editar atalhos globais"
+  },
+  "opt_globalHint": {
+    "message": "Na página que abrir, localize esta extensão e altere a tecla pelo ícone de lápis."
+  },
+  "opt_inpageTitle": {
+    "message": "Atalhos na página"
+  },
+  "tag_tabfocus": {
+    "message": "com a aba em foco"
+  },
+  "opt_inpageDesc": {
+    "message": "Clique em uma caixa e pressione sua combinação de teclas para alterá-la. Limpe com o ✕. Você também pode atribuir uma combinação separada na página a uma ação."
+  },
+  "opt_paramsTitle": {
+    "message": "Parâmetros"
+  },
+  "opt_volumeStep": {
+    "message": "Incremento de volume"
+  },
+  "opt_seekSeconds": {
+    "message": "Tempo de avanço"
+  },
+  "opt_unitSeconds": {
+    "message": "segundos"
+  },
+  "opt_reset": {
+    "message": "Restaurar padrões"
+  },
+  "opt_saved": {
+    "message": "Salvo ✓"
+  },
+  "opt_resetDone": {
+    "message": "Padrões restaurados"
+  },
+  "opt_globalRowNote": {
+    "message": "a tecla global é separada (botão acima)"
+  },
+  "key_unassigned": {
+    "message": "não atribuído"
+  },
+  "key_press": {
+    "message": "pressione as teclas…"
+  },
+  "pp_settings": {
+    "message": "Configurações de teclas"
+  },
+  "pp_editGlobal": {
+    "message": "Editar atalhos globais"
+  },
+  "pp_notOpen": {
+    "message": "O YouTube Music não está aberto."
+  },
+  "pp_noTrack": {
+    "message": "Nada está sendo reproduzido no momento."
+  },
+  "pp_loading": {
+    "message": "Carregando…"
+  },
+  "pp_globalTitle": {
+    "message": "Status dos atalhos globais"
+  },
+  "pp_globalUnassigned": {
+    "message": "não atribuído"
+  },
+  "pp_globalFix": {
+    "message": "Corrigir"
+  }
+}

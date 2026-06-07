@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "اختصارات YouTube Music"
+  },
+  "extDesc": {
+    "message": "تحكّم في YouTube Music عبر اختصارات لوحة المفاتيح: تشغيل/إيقاف مؤقت، التالي/السابق، الصوت، الكتم، التقديم، الإعجاب."
+  },
+  "cmd_playPause": {
+    "message": "تشغيل / إيقاف مؤقت"
+  },
+  "cmd_next": {
+    "message": "المقطع التالي"
+  },
+  "cmd_previous": {
+    "message": "المقطع السابق"
+  },
+  "cmd_mute": {
+    "message": "كتم / إلغاء الكتم"
+  },
+  "act_playPause": {
+    "message": "تشغيل / إيقاف مؤقت"
+  },
+  "act_next": {
+    "message": "المقطع التالي"
+  },
+  "act_previous": {
+    "message": "المقطع السابق"
+  },
+  "act_mute": {
+    "message": "كتم / إلغاء الكتم"
+  },
+  "act_volumeUp": {
+    "message": "رفع الصوت"
+  },
+  "act_volumeDown": {
+    "message": "خفض الصوت"
+  },
+  "act_seekForward": {
+    "message": "تقديم للأمام"
+  },
+  "act_seekBack": {
+    "message": "إرجاع للخلف"
+  },
+  "act_like": {
+    "message": "إعجاب"
+  },
+  "opt_subtitle": {
+    "message": "عيّن مفاتيحك أدناه. تعمل الاختصارات داخل الصفحة فقط عندما تكون علامة تبويب YouTube Music نشطة."
+  },
+  "opt_globalTitle": {
+    "message": "الاختصارات العامة"
+  },
+  "tag_everywhere": {
+    "message": "تعمل في كل مكان"
+  },
+  "opt_globalDesc": {
+    "message": "تعمل أوامر التشغيل/الإيقاف المؤقت والتالي والسابق والكتم حتى عندما يكون المتصفّح في الخلفية. تُدار هذه المفاتيح الأربعة بواسطة المتصفّح؛ عدّلها عبر الزر أدناه."
+  },
+  "opt_editGlobal": {
+    "message": "تعديل الاختصارات العامة"
+  },
+  "opt_globalHint": {
+    "message": "في الصفحة التي ستُفتح، ابحث عن هذه الإضافة وغيّر المفتاح من رمز القلم."
+  },
+  "opt_inpageTitle": {
+    "message": "الاختصارات داخل الصفحة"
+  },
+  "tag_tabfocus": {
+    "message": "أثناء تنشيط علامة التبويب"
+  },
+  "opt_inpageDesc": {
+    "message": "انقر على مربع واضغط مجموعة المفاتيح لتغييرها. امسحها باستخدام ✕. يمكنك أيضًا تعيين مجموعة منفصلة داخل الصفحة لإجراء ما."
+  },
+  "opt_paramsTitle": {
+    "message": "المعلمات"
+  },
+  "opt_volumeStep": {
+    "message": "خطوة الصوت"
+  },
+  "opt_seekSeconds": {
+    "message": "مقدار التقديم"
+  },
+  "opt_unitSeconds": {
+    "message": "ثوانٍ"
+  },
+  "opt_reset": {
+    "message": "استعادة الإعدادات الافتراضية"
+  },
+  "opt_saved": {
+    "message": "تم الحفظ ✓"
+  },
+  "opt_resetDone": {
+    "message": "تمت استعادة الإعدادات الافتراضية"
+  },
+  "opt_globalRowNote": {
+    "message": "المفتاح العام منفصل (الزر أعلاه)"
+  },
+  "key_unassigned": {
+    "message": "غير مُعيَّن"
+  },
+  "key_press": {
+    "message": "اضغط المفاتيح…"
+  },
+  "pp_settings": {
+    "message": "إعدادات المفاتيح"
+  },
+  "pp_editGlobal": {
+    "message": "تعديل الاختصارات العامة"
+  },
+  "pp_notOpen": {
+    "message": "YouTube Music غير مفتوح."
+  },
+  "pp_noTrack": {
+    "message": "لا يوجد تشغيل حاليًا."
+  },
+  "pp_loading": {
+    "message": "جارٍ التحميل…"
+  },
+  "pp_globalTitle": {
+    "message": "حالة الاختصار العام"
+  },
+  "pp_globalUnassigned": {
+    "message": "غير مُعيَّن"
+  },
+  "pp_globalFix": {
+    "message": "إصلاح"
+  }
+}

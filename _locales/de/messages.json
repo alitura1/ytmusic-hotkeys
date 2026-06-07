@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "YouTube Music Tastenkürzel"
+  },
+  "extDesc": {
+    "message": "Steuere YouTube Music mit Tastenkürzeln: Wiedergabe/Pause, Weiter/Zurück, Lautstärke, Stumm, Spulen, Mag ich."
+  },
+  "cmd_playPause": {
+    "message": "Wiedergabe / Pause"
+  },
+  "cmd_next": {
+    "message": "Nächster Titel"
+  },
+  "cmd_previous": {
+    "message": "Vorheriger Titel"
+  },
+  "cmd_mute": {
+    "message": "Stumm / Ton an"
+  },
+  "act_playPause": {
+    "message": "Wiedergabe / Pause"
+  },
+  "act_next": {
+    "message": "Nächster Titel"
+  },
+  "act_previous": {
+    "message": "Vorheriger Titel"
+  },
+  "act_mute": {
+    "message": "Stumm / Ton an"
+  },
+  "act_volumeUp": {
+    "message": "Lauter"
+  },
+  "act_volumeDown": {
+    "message": "Leiser"
+  },
+  "act_seekForward": {
+    "message": "Vorspulen"
+  },
+  "act_seekBack": {
+    "message": "Zurückspulen"
+  },
+  "act_like": {
+    "message": "Mag ich"
+  },
+  "opt_subtitle": {
+    "message": "Lege unten deine Tasten fest. In-Page-Tastenkürzel funktionieren nur, wenn der YouTube-Music-Tab im Vordergrund ist."
+  },
+  "opt_globalTitle": {
+    "message": "Globale Tastenkürzel"
+  },
+  "tag_everywhere": {
+    "message": "funktioniert überall"
+  },
+  "opt_globalDesc": {
+    "message": "Wiedergabe/Pause, Weiter, Zurück und Stumm funktionieren auch, wenn der Browser im Hintergrund läuft. Diese vier Tasten werden vom Browser verwaltet; bearbeite sie über die Schaltfläche unten."
+  },
+  "opt_editGlobal": {
+    "message": "Globale Tastenkürzel bearbeiten"
+  },
+  "opt_globalHint": {
+    "message": "Suche auf der geöffneten Seite diese Erweiterung und ändere die Taste über das Stift-Symbol."
+  },
+  "opt_inpageTitle": {
+    "message": "In-Page-Tastenkürzel"
+  },
+  "tag_tabfocus": {
+    "message": "wenn der Tab im Vordergrund ist"
+  },
+  "opt_inpageDesc": {
+    "message": "Klicke auf ein Feld und drücke deine Tastenkombination, um sie zu ändern. Mit dem ✕ löschen. Du kannst einer Aktion auch eine separate In-Page-Kombination zuweisen."
+  },
+  "opt_paramsTitle": {
+    "message": "Parameter"
+  },
+  "opt_volumeStep": {
+    "message": "Lautstärkeschritt"
+  },
+  "opt_seekSeconds": {
+    "message": "Spulweite"
+  },
+  "opt_unitSeconds": {
+    "message": "Sekunden"
+  },
+  "opt_reset": {
+    "message": "Standard wiederherstellen"
+  },
+  "opt_saved": {
+    "message": "Gespeichert ✓"
+  },
+  "opt_resetDone": {
+    "message": "Standard wiederhergestellt"
+  },
+  "opt_globalRowNote": {
+    "message": "globale Taste ist separat (Schaltfläche oben)"
+  },
+  "key_unassigned": {
+    "message": "nicht zugewiesen"
+  },
+  "key_press": {
+    "message": "Tasten drücken…"
+  },
+  "pp_settings": {
+    "message": "Tasteneinstellungen"
+  },
+  "pp_editGlobal": {
+    "message": "Globale Tastenkürzel bearbeiten"
+  },
+  "pp_notOpen": {
+    "message": "YouTube Music ist nicht geöffnet."
+  },
+  "pp_noTrack": {
+    "message": "Es wird gerade nichts abgespielt."
+  },
+  "pp_loading": {
+    "message": "Wird geladen…"
+  },
+  "pp_globalTitle": {
+    "message": "Status der globalen Tastenkürzel"
+  },
+  "pp_globalUnassigned": {
+    "message": "nicht zugewiesen"
+  },
+  "pp_globalFix": {
+    "message": "Beheben"
+  }
+}

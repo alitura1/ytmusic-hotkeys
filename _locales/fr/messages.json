@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "Raccourcis YouTube Music"
+  },
+  "extDesc": {
+    "message": "Contrôlez YouTube Music au clavier : lecture/pause, suivant/précédent, volume, sourdine, avance/recul, j'aime."
+  },
+  "cmd_playPause": {
+    "message": "Lecture / Pause"
+  },
+  "cmd_next": {
+    "message": "Piste suivante"
+  },
+  "cmd_previous": {
+    "message": "Piste précédente"
+  },
+  "cmd_mute": {
+    "message": "Couper / Rétablir le son"
+  },
+  "act_playPause": {
+    "message": "Lecture / Pause"
+  },
+  "act_next": {
+    "message": "Piste suivante"
+  },
+  "act_previous": {
+    "message": "Piste précédente"
+  },
+  "act_mute": {
+    "message": "Couper / Rétablir le son"
+  },
+  "act_volumeUp": {
+    "message": "Augmenter le volume"
+  },
+  "act_volumeDown": {
+    "message": "Baisser le volume"
+  },
+  "act_seekForward": {
+    "message": "Avancer"
+  },
+  "act_seekBack": {
+    "message": "Reculer"
+  },
+  "act_like": {
+    "message": "J'aime"
+  },
+  "opt_subtitle": {
+    "message": "Définissez vos touches ci-dessous. Les raccourcis intégrés ne fonctionnent que lorsque l'onglet YouTube Music est au premier plan."
+  },
+  "opt_globalTitle": {
+    "message": "Raccourcis globaux"
+  },
+  "tag_everywhere": {
+    "message": "fonctionne partout"
+  },
+  "opt_globalDesc": {
+    "message": "Lecture/Pause, Suivant, Précédent et Sourdine fonctionnent même lorsque le navigateur est en arrière-plan. Ces quatre touches sont gérées par le navigateur ; modifiez-les avec le bouton ci-dessous."
+  },
+  "opt_editGlobal": {
+    "message": "Modifier les raccourcis globaux"
+  },
+  "opt_globalHint": {
+    "message": "Sur la page qui s'ouvre, repérez cette extension et changez la touche via l'icône en forme de crayon."
+  },
+  "opt_inpageTitle": {
+    "message": "Raccourcis intégrés"
+  },
+  "tag_tabfocus": {
+    "message": "quand l'onglet est au premier plan"
+  },
+  "opt_inpageDesc": {
+    "message": "Cliquez sur une case et appuyez sur votre combinaison de touches pour la modifier. Effacez avec ✕. Vous pouvez aussi attribuer une combinaison intégrée distincte à une action."
+  },
+  "opt_paramsTitle": {
+    "message": "Paramètres"
+  },
+  "opt_volumeStep": {
+    "message": "Pas de volume"
+  },
+  "opt_seekSeconds": {
+    "message": "Durée d'avance/recul"
+  },
+  "opt_unitSeconds": {
+    "message": "secondes"
+  },
+  "opt_reset": {
+    "message": "Rétablir les valeurs par défaut"
+  },
+  "opt_saved": {
+    "message": "Enregistré ✓"
+  },
+  "opt_resetDone": {
+    "message": "Valeurs par défaut rétablies"
+  },
+  "opt_globalRowNote": {
+    "message": "la touche globale est distincte (bouton ci-dessus)"
+  },
+  "key_unassigned": {
+    "message": "non attribué"
+  },
+  "key_press": {
+    "message": "appuyez sur les touches…"
+  },
+  "pp_settings": {
+    "message": "Réglages des touches"
+  },
+  "pp_editGlobal": {
+    "message": "Modifier les raccourcis globaux"
+  },
+  "pp_notOpen": {
+    "message": "YouTube Music n'est pas ouvert."
+  },
+  "pp_noTrack": {
+    "message": "Aucune lecture en cours."
+  },
+  "pp_loading": {
+    "message": "Chargement…"
+  },
+  "pp_globalTitle": {
+    "message": "État des raccourcis globaux"
+  },
+  "pp_globalUnassigned": {
+    "message": "non attribué"
+  },
+  "pp_globalFix": {
+    "message": "Corriger"
+  }
+}

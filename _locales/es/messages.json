@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "Atajos para YouTube Music"
+  },
+  "extDesc": {
+    "message": "Controla YouTube Music con atajos de teclado: reproducir/pausar, siguiente/anterior, volumen, silenciar, avanzar/retroceder, me gusta."
+  },
+  "cmd_playPause": {
+    "message": "Reproducir / Pausar"
+  },
+  "cmd_next": {
+    "message": "Pista siguiente"
+  },
+  "cmd_previous": {
+    "message": "Pista anterior"
+  },
+  "cmd_mute": {
+    "message": "Silenciar / Reactivar"
+  },
+  "act_playPause": {
+    "message": "Reproducir / Pausar"
+  },
+  "act_next": {
+    "message": "Pista siguiente"
+  },
+  "act_previous": {
+    "message": "Pista anterior"
+  },
+  "act_mute": {
+    "message": "Silenciar / Reactivar"
+  },
+  "act_volumeUp": {
+    "message": "Subir volumen"
+  },
+  "act_volumeDown": {
+    "message": "Bajar volumen"
+  },
+  "act_seekForward": {
+    "message": "Avanzar"
+  },
+  "act_seekBack": {
+    "message": "Retroceder"
+  },
+  "act_like": {
+    "message": "Me gusta"
+  },
+  "opt_subtitle": {
+    "message": "Configura tus teclas a continuación. Los atajos en la página solo funcionan cuando la pestaña de YouTube Music está activa."
+  },
+  "opt_globalTitle": {
+    "message": "Atajos globales"
+  },
+  "tag_everywhere": {
+    "message": "funcionan en todas partes"
+  },
+  "opt_globalDesc": {
+    "message": "Reproducir/Pausar, Siguiente, Anterior y Silenciar funcionan incluso cuando el navegador está en segundo plano. Estas cuatro teclas las gestiona el navegador; edítalas con el botón de abajo."
+  },
+  "opt_editGlobal": {
+    "message": "Editar atajos globales"
+  },
+  "opt_globalHint": {
+    "message": "En la página que se abre, busca esta extensión y cambia la tecla desde el icono del lápiz."
+  },
+  "opt_inpageTitle": {
+    "message": "Atajos en la página"
+  },
+  "tag_tabfocus": {
+    "message": "con la pestaña activa"
+  },
+  "opt_inpageDesc": {
+    "message": "Haz clic en una casilla y pulsa tu combinación de teclas para cambiarla. Borra con la ✕. También puedes asignar una combinación independiente en la página a una acción."
+  },
+  "opt_paramsTitle": {
+    "message": "Parámetros"
+  },
+  "opt_volumeStep": {
+    "message": "Paso de volumen"
+  },
+  "opt_seekSeconds": {
+    "message": "Cantidad de avance"
+  },
+  "opt_unitSeconds": {
+    "message": "segundos"
+  },
+  "opt_reset": {
+    "message": "Restaurar valores predeterminados"
+  },
+  "opt_saved": {
+    "message": "Guardado ✓"
+  },
+  "opt_resetDone": {
+    "message": "Valores predeterminados restaurados"
+  },
+  "opt_globalRowNote": {
+    "message": "la tecla global es independiente (botón de arriba)"
+  },
+  "key_unassigned": {
+    "message": "sin asignar"
+  },
+  "key_press": {
+    "message": "pulsa las teclas…"
+  },
+  "pp_settings": {
+    "message": "Ajustes de teclas"
+  },
+  "pp_editGlobal": {
+    "message": "Editar atajos globales"
+  },
+  "pp_notOpen": {
+    "message": "YouTube Music no está abierto."
+  },
+  "pp_noTrack": {
+    "message": "No se está reproduciendo nada ahora mismo."
+  },
+  "pp_loading": {
+    "message": "Cargando…"
+  },
+  "pp_globalTitle": {
+    "message": "Estado de los atajos globales"
+  },
+  "pp_globalUnassigned": {
+    "message": "sin asignar"
+  },
+  "pp_globalFix": {
+    "message": "Corregir"
+  }
+}

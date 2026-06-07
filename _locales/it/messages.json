@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "Scorciatoie per YouTube Music"
+  },
+  "extDesc": {
+    "message": "Controlla YouTube Music con le scorciatoie da tastiera: riproduci/pausa, successivo/precedente, volume, silenzia, scorrimento, like."
+  },
+  "cmd_playPause": {
+    "message": "Riproduci / Pausa"
+  },
+  "cmd_next": {
+    "message": "Brano successivo"
+  },
+  "cmd_previous": {
+    "message": "Brano precedente"
+  },
+  "cmd_mute": {
+    "message": "Silenzia / Riattiva audio"
+  },
+  "act_playPause": {
+    "message": "Riproduci / Pausa"
+  },
+  "act_next": {
+    "message": "Brano successivo"
+  },
+  "act_previous": {
+    "message": "Brano precedente"
+  },
+  "act_mute": {
+    "message": "Silenzia / Riattiva audio"
+  },
+  "act_volumeUp": {
+    "message": "Alza il volume"
+  },
+  "act_volumeDown": {
+    "message": "Abbassa il volume"
+  },
+  "act_seekForward": {
+    "message": "Avanti veloce"
+  },
+  "act_seekBack": {
+    "message": "Indietro veloce"
+  },
+  "act_like": {
+    "message": "Like"
+  },
+  "opt_subtitle": {
+    "message": "Imposta i tuoi tasti qui sotto. Le scorciatoie in pagina funzionano solo quando la scheda di YouTube Music è attiva."
+  },
+  "opt_globalTitle": {
+    "message": "Scorciatoie globali"
+  },
+  "tag_everywhere": {
+    "message": "funziona ovunque"
+  },
+  "opt_globalDesc": {
+    "message": "Riproduci/Pausa, Successivo, Precedente e Silenzia funzionano anche quando il browser è in background. Questi quattro tasti sono gestiti dal browser; modificali con il pulsante qui sotto."
+  },
+  "opt_editGlobal": {
+    "message": "Modifica scorciatoie globali"
+  },
+  "opt_globalHint": {
+    "message": "Nella pagina che si apre, trova questa estensione e cambia il tasto dall'icona della matita."
+  },
+  "opt_inpageTitle": {
+    "message": "Scorciatoie in pagina"
+  },
+  "tag_tabfocus": {
+    "message": "quando la scheda è attiva"
+  },
+  "opt_inpageDesc": {
+    "message": "Clicca su una casella e premi la combinazione di tasti per cambiarla. Cancella con la ✕. Puoi anche assegnare a un'azione una combinazione in pagina separata."
+  },
+  "opt_paramsTitle": {
+    "message": "Parametri"
+  },
+  "opt_volumeStep": {
+    "message": "Incremento del volume"
+  },
+  "opt_seekSeconds": {
+    "message": "Entità dello scorrimento"
+  },
+  "opt_unitSeconds": {
+    "message": "secondi"
+  },
+  "opt_reset": {
+    "message": "Ripristina i valori predefiniti"
+  },
+  "opt_saved": {
+    "message": "Salvato ✓"
+  },
+  "opt_resetDone": {
+    "message": "Valori predefiniti ripristinati"
+  },
+  "opt_globalRowNote": {
+    "message": "il tasto globale è separato (pulsante sopra)"
+  },
+  "key_unassigned": {
+    "message": "non assegnato"
+  },
+  "key_press": {
+    "message": "premi i tasti…"
+  },
+  "pp_settings": {
+    "message": "Impostazioni tasti"
+  },
+  "pp_editGlobal": {
+    "message": "Modifica scorciatoie globali"
+  },
+  "pp_notOpen": {
+    "message": "YouTube Music non è aperto."
+  },
+  "pp_noTrack": {
+    "message": "Non è in riproduzione nulla al momento."
+  },
+  "pp_loading": {
+    "message": "Caricamento…"
+  },
+  "pp_globalTitle": {
+    "message": "Stato delle scorciatoie globali"
+  },
+  "pp_globalUnassigned": {
+    "message": "non assegnato"
+  },
+  "pp_globalFix": {
+    "message": "Correggi"
+  }
+}

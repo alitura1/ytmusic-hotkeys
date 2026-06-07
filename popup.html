@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>YouTube Music · Hotkeys</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="head">
+      <svg viewBox="0 0 100 100" width="26" height="26" aria-hidden="true">
+        <circle cx="50" cy="50" r="50" fill="#ff0033" />
+        <path d="M40 30 L40 70 L72 50 Z" fill="#fff" />
+      </svg>
+      <h1 data-i18n="extName">YouTube Music Hotkeys</h1>
+    </div>
+
+    <div id="now" class="now">
+      <div class="art" id="art"></div>
+      <div class="meta">
+        <div class="title" id="title" data-i18n="pp_loading"></div>
+        <div class="artist" id="artist"></div>
+      </div>
+    </div>
+
+    <div class="transport" id="transport">
+      <button class="t" id="t-previous" data-action="previous" title="">
+        <svg viewBox="0 0 24 24"><polygon points="19 20 9 12 19 4 19 20" /><line x1="5" y1="19" x2="5" y2="5" /></svg>
+      </button>
+      <button class="t big" id="t-play" data-action="play-pause" title=""></button>
+      <button class="t" id="t-next" data-action="next" title="">
+        <svg viewBox="0 0 24 24"><polygon points="5 4 15 12 5 20 5 4" /><line x1="19" y1="5" x2="19" y2="19" /></svg>
+      </button>
+      <button class="t" id="t-voldown" data-action="volume-down" title="">
+        <svg viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" /><path d="M15.54 8.46a5 5 0 0 1 0 7.07" /></svg>
+      </button>
+      <button class="t" id="t-volup" data-action="volume-up" title="">
+        <svg viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" /><path d="M15.54 8.46a5 5 0 0 1 0 7.07" /><path d="M19.07 4.93a10 10 0 0 1 0 14.14" /></svg>
+      </button>
+      <button class="t" id="t-mute" data-action="mute" title="">
+        <svg viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" /><line x1="23" y1="9" x2="17" y2="15" /><line x1="17" y1="9" x2="23" y2="15" /></svg>
+      </button>
+      <button class="t" id="t-like" data-action="like" title="">
+        <svg viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" /></svg>
+      </button>
+    </div>
+
+    <div class="status-card">
+      <div class="status-title" data-i18n="pp_globalTitle"></div>
+      <div id="global-list" class="global-list"></div>
+    </div>
+
+    <div class="actions">
+      <button id="open-options" class="link">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" /></svg>
+        <span data-i18n="pp_settings"></span>
+      </button>
+      <button id="open-shortcuts" class="link">
+        <svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="14" rx="2" /><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M6 14h.01M18 14h.01M10 14h4" /></svg>
+        <span data-i18n="pp_editGlobal"></span>
+      </button>
+    </div>
+
+    <script src="defaults.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

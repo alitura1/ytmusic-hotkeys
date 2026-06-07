@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "YouTube Music ホットキー"
+  },
+  "extDesc": {
+    "message": "YouTube Music をキーボードショートカットで操作：再生／一時停止、次へ／前へ、音量、ミュート、シーク、高評価。"
+  },
+  "cmd_playPause": {
+    "message": "再生／一時停止"
+  },
+  "cmd_next": {
+    "message": "次のトラック"
+  },
+  "cmd_previous": {
+    "message": "前のトラック"
+  },
+  "cmd_mute": {
+    "message": "ミュート／解除"
+  },
+  "act_playPause": {
+    "message": "再生／一時停止"
+  },
+  "act_next": {
+    "message": "次のトラック"
+  },
+  "act_previous": {
+    "message": "前のトラック"
+  },
+  "act_mute": {
+    "message": "ミュート／解除"
+  },
+  "act_volumeUp": {
+    "message": "音量を上げる"
+  },
+  "act_volumeDown": {
+    "message": "音量を下げる"
+  },
+  "act_seekForward": {
+    "message": "早送り"
+  },
+  "act_seekBack": {
+    "message": "巻き戻し"
+  },
+  "act_like": {
+    "message": "高評価"
+  },
+  "opt_subtitle": {
+    "message": "以下でキーを設定します。ページ内ショートカットは YouTube Music のタブがアクティブなときのみ動作します。"
+  },
+  "opt_globalTitle": {
+    "message": "グローバルショートカット"
+  },
+  "tag_everywhere": {
+    "message": "どこでも動作"
+  },
+  "opt_globalDesc": {
+    "message": "再生／一時停止、次へ、前へ、ミュートはブラウザがバックグラウンドにあっても動作します。これら4つのキーはブラウザが管理しており、下のボタンから編集できます。"
+  },
+  "opt_editGlobal": {
+    "message": "グローバルショートカットを編集"
+  },
+  "opt_globalHint": {
+    "message": "開いたページでこの拡張機能を見つけ、鉛筆アイコンからキーを変更してください。"
+  },
+  "opt_inpageTitle": {
+    "message": "ページ内ショートカット"
+  },
+  "tag_tabfocus": {
+    "message": "タブがアクティブなとき"
+  },
+  "opt_inpageDesc": {
+    "message": "ボックスをクリックしてキーの組み合わせを押すと変更できます。✕ でクリアします。アクションごとに別のページ内キーを割り当てることもできます。"
+  },
+  "opt_paramsTitle": {
+    "message": "パラメータ"
+  },
+  "opt_volumeStep": {
+    "message": "音量の刻み幅"
+  },
+  "opt_seekSeconds": {
+    "message": "シーク量"
+  },
+  "opt_unitSeconds": {
+    "message": "秒"
+  },
+  "opt_reset": {
+    "message": "既定値に戻す"
+  },
+  "opt_saved": {
+    "message": "保存しました ✓"
+  },
+  "opt_resetDone": {
+    "message": "既定値に戻しました"
+  },
+  "opt_globalRowNote": {
+    "message": "グローバルキーは別設定（上のボタン）"
+  },
+  "key_unassigned": {
+    "message": "未割り当て"
+  },
+  "key_press": {
+    "message": "キーを押す…"
+  },
+  "pp_settings": {
+    "message": "キー設定"
+  },
+  "pp_editGlobal": {
+    "message": "グローバルショートカットを編集"
+  },
+  "pp_notOpen": {
+    "message": "YouTube Music が開いていません。"
+  },
+  "pp_noTrack": {
+    "message": "現在、何も再生されていません。"
+  },
+  "pp_loading": {
+    "message": "読み込み中…"
+  },
+  "pp_globalTitle": {
+    "message": "グローバルショートカットの状態"
+  },
+  "pp_globalUnassigned": {
+    "message": "未割り当て"
+  },
+  "pp_globalFix": {
+    "message": "修正"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "YouTube Music 快捷键"
+  },
+  "extDesc": {
+    "message": "用键盘快捷键控制 YouTube Music：播放/暂停、下一首/上一首、音量、静音、快进快退、点赞。"
+  },
+  "cmd_playPause": {
+    "message": "播放 / 暂停"
+  },
+  "cmd_next": {
+    "message": "下一首"
+  },
+  "cmd_previous": {
+    "message": "上一首"
+  },
+  "cmd_mute": {
+    "message": "静音 / 取消静音"
+  },
+  "act_playPause": {
+    "message": "播放 / 暂停"
+  },
+  "act_next": {
+    "message": "下一首"
+  },
+  "act_previous": {
+    "message": "上一首"
+  },
+  "act_mute": {
+    "message": "静音 / 取消静音"
+  },
+  "act_volumeUp": {
+    "message": "调高音量"
+  },
+  "act_volumeDown": {
+    "message": "调低音量"
+  },
+  "act_seekForward": {
+    "message": "快进"
+  },
+  "act_seekBack": {
+    "message": "快退"
+  },
+  "act_like": {
+    "message": "点赞"
+  },
+  "opt_subtitle": {
+    "message": "在下方设置你的按键。页内快捷键仅在 YouTube Music 标签页处于焦点时有效。"
+  },
+  "opt_globalTitle": {
+    "message": "全局快捷键"
+  },
+  "tag_everywhere": {
+    "message": "随处可用"
+  },
+  "opt_globalDesc": {
+    "message": "即使浏览器在后台，播放/暂停、下一首、上一首和静音也能使用。这四个按键由浏览器管理；请使用下方按钮进行编辑。"
+  },
+  "opt_editGlobal": {
+    "message": "编辑全局快捷键"
+  },
+  "opt_globalHint": {
+    "message": "在打开的页面中找到本扩展，点击铅笔图标更改按键。"
+  },
+  "opt_inpageTitle": {
+    "message": "页内快捷键"
+  },
+  "tag_tabfocus": {
+    "message": "标签页处于焦点时"
+  },
+  "opt_inpageDesc": {
+    "message": "点击输入框并按下你的组合键即可更改。按 ✕ 清除。你也可以为某个操作单独指定页内组合键。"
+  },
+  "opt_paramsTitle": {
+    "message": "参数"
+  },
+  "opt_volumeStep": {
+    "message": "音量步长"
+  },
+  "opt_seekSeconds": {
+    "message": "快进快退幅度"
+  },
+  "opt_unitSeconds": {
+    "message": "秒"
+  },
+  "opt_reset": {
+    "message": "恢复默认"
+  },
+  "opt_saved": {
+    "message": "已保存 ✓"
+  },
+  "opt_resetDone": {
+    "message": "已恢复默认设置"
+  },
+  "opt_globalRowNote": {
+    "message": "全局按键单独设置（见上方按钮）"
+  },
+  "key_unassigned": {
+    "message": "未分配"
+  },
+  "key_press": {
+    "message": "请按键…"
+  },
+  "pp_settings": {
+    "message": "按键设置"
+  },
+  "pp_editGlobal": {
+    "message": "编辑全局快捷键"
+  },
+  "pp_notOpen": {
+    "message": "YouTube Music 未打开。"
+  },
+  "pp_noTrack": {
+    "message": "当前没有正在播放的内容。"
+  },
+  "pp_loading": {
+    "message": "加载中…"
+  },
+  "pp_globalTitle": {
+    "message": "全局快捷键状态"
+  },
+  "pp_globalUnassigned": {
+    "message": "未分配"
+  },
+  "pp_globalFix": {
+    "message": "修复"
+  }
+}

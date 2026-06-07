@@ -1,0 +1,128 @@
+{
+  "extName": {
+    "message": "Горячие клавиши YouTube Music"
+  },
+  "extDesc": {
+    "message": "Управляйте YouTube Music с помощью клавиатуры: воспроизведение/пауза, следующий/предыдущий, громкость, звук, перемотка, лайк."
+  },
+  "cmd_playPause": {
+    "message": "Воспроизведение / Пауза"
+  },
+  "cmd_next": {
+    "message": "Следующий трек"
+  },
+  "cmd_previous": {
+    "message": "Предыдущий трек"
+  },
+  "cmd_mute": {
+    "message": "Выключить / Включить звук"
+  },
+  "act_playPause": {
+    "message": "Воспроизведение / Пауза"
+  },
+  "act_next": {
+    "message": "Следующий трек"
+  },
+  "act_previous": {
+    "message": "Предыдущий трек"
+  },
+  "act_mute": {
+    "message": "Выключить / Включить звук"
+  },
+  "act_volumeUp": {
+    "message": "Громче"
+  },
+  "act_volumeDown": {
+    "message": "Тише"
+  },
+  "act_seekForward": {
+    "message": "Перемотка вперёд"
+  },
+  "act_seekBack": {
+    "message": "Перемотка назад"
+  },
+  "act_like": {
+    "message": "Лайк"
+  },
+  "opt_subtitle": {
+    "message": "Задайте свои клавиши ниже. Внутристраничные сочетания работают, только когда вкладка YouTube Music активна."
+  },
+  "opt_globalTitle": {
+    "message": "Глобальные сочетания"
+  },
+  "tag_everywhere": {
+    "message": "работают везде"
+  },
+  "opt_globalDesc": {
+    "message": "Воспроизведение/Пауза, Следующий, Предыдущий и Выключение звука работают, даже когда браузер свёрнут. Эти четыре клавиши управляются браузером; измените их с помощью кнопки ниже."
+  },
+  "opt_editGlobal": {
+    "message": "Изменить глобальные сочетания"
+  },
+  "opt_globalHint": {
+    "message": "На открывшейся странице найдите это расширение и измените клавишу по значку карандаша."
+  },
+  "opt_inpageTitle": {
+    "message": "Внутристраничные сочетания"
+  },
+  "tag_tabfocus": {
+    "message": "когда вкладка активна"
+  },
+  "opt_inpageDesc": {
+    "message": "Нажмите на поле и введите сочетание клавиш, чтобы изменить его. Очистите с помощью ✕. Вы также можете назначить действию отдельное внутристраничное сочетание."
+  },
+  "opt_paramsTitle": {
+    "message": "Параметры"
+  },
+  "opt_volumeStep": {
+    "message": "Шаг громкости"
+  },
+  "opt_seekSeconds": {
+    "message": "Шаг перемотки"
+  },
+  "opt_unitSeconds": {
+    "message": "секунд"
+  },
+  "opt_reset": {
+    "message": "Восстановить по умолчанию"
+  },
+  "opt_saved": {
+    "message": "Сохранено ✓"
+  },
+  "opt_resetDone": {
+    "message": "Настройки по умолчанию восстановлены"
+  },
+  "opt_globalRowNote": {
+    "message": "глобальная клавиша задаётся отдельно (кнопка выше)"
+  },
+  "key_unassigned": {
+    "message": "не назначено"
+  },
+  "key_press": {
+    "message": "нажмите клавиши…"
+  },
+  "pp_settings": {
+    "message": "Настройки клавиш"
+  },
+  "pp_editGlobal": {
+    "message": "Изменить глобальные сочетания"
+  },
+  "pp_notOpen": {
+    "message": "YouTube Music не открыт."
+  },
+  "pp_noTrack": {
+    "message": "Сейчас ничего не воспроизводится."
+  },
+  "pp_loading": {
+    "message": "Загрузка…"
+  },
+  "pp_globalTitle": {
+    "message": "Статус глобальных сочетаний"
+  },
+  "pp_globalUnassigned": {
+    "message": "не назначено"
+  },
+  "pp_globalFix": {
+    "message": "Исправить"
+  }
+}
